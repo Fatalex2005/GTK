@@ -29,6 +29,18 @@
 body {
     background: #F8FAFD;
 }
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 header{
     background: #436591;
 }
@@ -60,37 +72,38 @@ nav > ul > li > a {
     text-decoration: none;
     color: white;
 }
-.connect {
+.connect__slider {
+    padding: 50px 30px;
     font-family: Stapel, sans-serif;
     margin-top: 32px;
     background: #FCBD14 url("../images/chel.png") bottom no-repeat;
     height: 380px;
-    padding-top: 32px;
     border-radius: 15px;
 }
-.connect > h1 {
+.slider__item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.connect__slider .slider__item > h1 {
     font-size: 42px;
     color: white;
     font-weight: 500;
-    margin-left: 66px;
 }
-.connect > p {
+.connect__slider .slider__item > p {
     font-size: 24px;
     color: white;
     font-weight: 400;
-    margin-top: 15px;
-    margin-left: 66px;
 }
-.connect > button {
-    margin-left: 66px;
+.connect__slider > .slider__item a {
     background: #2FA56C;
     border-radius: 10px;
-    border: none;
-    height: 40px;
-    width: 198px;
-    margin-top: 70px;
+    padding: 20px 40px;
+    text-decoration: none;
+    color: whitesmoke;
+    width: 90px;
 }
-.connect > button > a{
+.connect__slider > .slider__item button > a{
     font-family: Stapel, sans-serif;
     color: white;
     text-decoration: none;
@@ -132,7 +145,7 @@ nav > ul > li > a {
     background-color: #436591;
     opacity: 100%;
 }
-.con {
+.slider__buttons {
     display: flex;
     justify-content: space-between;
 }
@@ -168,51 +181,23 @@ nav > ul > li > a {
     margin-top: 56px;
     height: 419px;
 }
-.rate > .super{
-    background: #FFFFFF;
-    width: 240px;
-    border-top: 9px solid #FCBD14;
-    border-radius: 10px;
-}
-.rate > .mega{
+.rate > .rate__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #FFFFFF;
     width: 240px;
     border-top: 9px solid #2389CA;
     border-radius: 10px;
 }
-.rate > .giga{
-    background: #FFFFFF;
-    width: 240px;
-    border-top: 9px solid #ED6E44;
-    border-radius: 10px;
-}
-.rate > .super > h2 {
+
+.rate > .rate__item > h2 {
     text-align: center;
     font-size: 32px;
     padding-bottom: 9px;
     border-bottom: 1px solid #E1E7EF;
 }
-.rate > .mega > h2 {
-    text-align: center;
-    font-size: 32px;
-    padding-bottom: 9px;
-    border-bottom: 1px solid #E1E7EF;
-}
-.rate > .giga > h2 {
-    text-align: center;
-    font-size: 32px;
-    padding-bottom: 9px;
-    border-bottom: 1px solid #E1E7EF;
-}
-.rate > .super > p {
-    font-size: 12px;
-    margin-left: 18px;
-}
-.rate > .mega > p {
-    font-size: 12px;
-    margin-left: 18px;
-}
-.rate > .giga > p {
+.rate > .rate__item > p {
     font-size: 12px;
     margin-left: 18px;
 }
@@ -258,14 +243,16 @@ nav > ul > li > a {
     font-size: 24px;
 }
 .request {
-    height: 40px;
-    width: 198px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px 5px;
     background: #2FA56C;
     border: none;
     border-radius: 10px;
     font-size: 18px;
     font-family: Stapel, sans-serif;
-    margin-left: 21px;
     margin-top: 22px;
 }
 .request > a {
@@ -613,23 +600,20 @@ nav > ul > li > a {
 .data > p {
     margin-left: 9px;
 }
-.data > button {
-    height: 40px;
-    width: 190px;
-    border: none;
+.data > a {
+    padding: 10px;
     border-radius: 10px;
     background: #2FA56C;
-}
-.data > button > a {
     font-family: Stapel, sans-serif;
     text-decoration: none;
     color: white;
     font-size: 18px;
+    text-align: center;
 }
 .la {
-    height: 420px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 40px;
     margin-top: 30px;
 }
@@ -642,7 +626,6 @@ footer{
 }
 .footer {
     display: flex;
-
 }
 .support {
     display: flex;

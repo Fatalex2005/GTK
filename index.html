@@ -1,18 +1,293 @@
-<!doctype html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ГТК</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-    <body>
-        <header>
+    <!doctype html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.5, minimum-scale=0.5">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ГТК</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+        <body>
+            <header>
+                <div class="container">
+                    <nav>
+                        <img src="assets/images/logo.png" class="logo" alt="Логотип">
+                        <ul>
+                            <li><a href="#">Тарифы</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Оставить заявку</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">(812) 332-34-33</a></li>
+                            <li><a href="#">support@gtk.su</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <section class="container connect">
+                <div class="connect__slider slider">
+                    <div class="slider__item">
+                        <h1>Пять месяцев интернета<br>на скорости 100 мбит/сек</h1>
+                        <p>Подключитесь к ГТК и работайте<br>быстрее со скоростью 100 мбит/сек.<br>в течение 5 месяцев</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="slider__buttons">
+                    <div class="radiobtn">
+                        <label class="visually-hidden" for="slide-1">слайд 1</label>
+                        <label class="visually-hidden" for="slide-2">слайд 2</label>
+                        <label class="visually-hidden" for="slide-3">слайд 3</label>
+                        <label class="visually-hidden" for="slide-4">слайд 4</label>
+                        <input id="slide-1" type="radio" name="a" value="1">
+                        <input id="slide-2" type="radio" name="a" value="2" checked>
+                        <input id="slide-3" type="radio" name="a" value="3">
+                        <input id="slide-4" type="radio" name="a" value="4">
+                    </div>
+                    <a href="#">Все акции</a>
+                </div>
+            </section>
             <div class="container">
-                <nav>
-                    <img src="assets/images/logo.png" class="logo" alt="Логотип">
+                <div class="city">
+                    <button type="button">Санкт-Петербург</button>
+                    <button type="button">Ленинградская область</button>
+                    <button type="button">Тарифы СмотрЁшка</button>
+                </div>
+                <div class="rate">
+                    <div class="super rate__item">
+                        <h2>Тариф<br>«Супер»</h2>
+                        <p class="pa">Вы можете бесперебойно решать<br>повседневные задачи в сети:<br>досуг, учёба или работа</p>
+                        <div class="one">
+                        <p class="po">Подключение</p>
+                        <p>Бесплатно</p>
+                        </div>
+                        <div class="two">
+                        <p class="sk">Скорость</p>
+                        <p>50 мб/с</p>
+                        </div>
+                        <div class="border">
+                            <div class="price">
+                                <p class="price">от 315</p>
+                            </div>
+                            <div class="month">
+                                <p class="po">руб/мес.</p>
+                                <p class="po size">[450 руб за 1 мес.]</p>
+                            </div>
+                            <a href="#" class="request">Оставить заявку</a>
+                        </div>
+                    </div>
+                    <div class="mega rate__item">
+                        <h2>Тариф<br>«Мега»</h2>
+                        <p class="pa">Для уверенных пользователей<br>интернета: стриминговые сервисы,<br>кино в HD-качестве, загрузка<br>объёмных файлов</p>
+                        <div class="three">
+                            <p class="po">Подключение</p>
+                            <p>Бесплатно</p>
+                        </div>
+                        <div class="four">
+                            <p class="sk">Скорость</p>
+                            <p>100 мб/с</p>
+                        </div>
+                        <div class="border">
+                        <div class="price">
+                            <p class="price">от 430</p>
+                        </div>
+                        <div class="month">
+                            <p class="po">руб/мес.</p>
+                            <p class="po size">[600 руб за 1 мес.]</p>
+                        </div>
+                        <a href="#" class="request">Оставить заявку</a>
+                        </div>
+                    </div>
+                    <div class="giga rate__item">
+                        <h2>Тариф<br>«Гига»</h2>
+                        <p class="pa">Для одновременной работы,<br>более четырёх устройств.<br>Тариф для рабочих задач<br>и онлайн-игр</p>
+                        <div class="five">
+                            <p class="po">Подключение</p>
+                            <p>1000 руб.</p>
+                        </div>
+                        <div class="six">
+                            <p class="sk">Скорость</p>
+                            <p>200 мб/с</p>
+                        </div>
+                        <div class="border">
+                        <div class="price">
+                            <p class="price">от 650</p>
+                        </div>
+                        <div class="month">
+                            <p class="po">руб/мес.</p>
+                            <p class="po size">[800 руб за 1 мес.]</p>
+                        </div>
+                        <a href="#" class="request">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="desc container">
+            <div class="blue"></div>
+            <div class="red">
+                <p class="company">ГТК – компания-провайдер с многолетним опытом,<br>
+                    действующая в интересах каждого клиента.<br>
+                    Мы профессионально и оперативно решаем<br>
+                    любую задачу наших пользователей.
+                </p>
+            </div>
+            <p>Когда вы становитесь нашим клиентом, вы гарантированно<br>
+                можете рассчитывать на качественную и профессиональную<br>
+                адресную поддержку в решении любого возникшего<br>
+                технического вопроса, ведь ГТК с 2003 года находит<br>
+                индивидуальный подход к каждому новому абоненту
+            </p>
+            <div class="yellow"></div>
+        </div>
+        <div class="container view">
+            <h2 class="service">ТВ-сервис<br>
+                «СмотрЁшка»</h2>
+            <p>Вы найдёте на «СмотрЁшке» качественный<br>
+                контент на любой вкус и с любого устройства</p>
+            <a href="#">Подробнее</a>
+        </div>
+        <div class="container stock">
+        <div class="orange">
+            <h2>500 рублей на счёт<br>
+                каждому абоненту</h2>
+            <p>Хотите подарок? Легко!<br>
+                Вы рекомендуете нас Вашим друзьям<br>
+                и знакомым - мы пополняем Ваш счёт<br>
+                в ГТК на 500 рублей!
+            </p>
+            <div class="more">
+                <a href="#" class="btn">Подробнее</a>
+            </div>
+        </div>
+        <div class="green">
+            <h2>Два месяца<br>
+                бесплатного<br>
+                Интернета</h2>
+            <p>Вас больше не устраивают условия<br>
+                вашего интернет-провайдера?<br>
+                Станьте клиентом ГТК и получите<br>
+                бесплатное использование интернета<br>
+                на протяжении 2 месяцев
+            </p>
+            <div class="moretwo">
+               <a href="#" class="btn">Подробнее</a>
+            </div>
+        </div>
+        </div>
+        <div class="form container">
+            <h2>Станьте абонентом ГТК прямо сейчас!</h2>
+            <form>
+                <div class="name">
+                <label class="family">Имя и Фамилия</label>
+                <label class="street">Улица</label>
+                </div>
+                <div class="stroke">
+                <input class="inputone" type="text">
+                <input class="inputtwo" type="text">
+                </div>
+                <div class="tel">
+                <label class="num">Номер телефона</label>
+                <label class="email">Эл.почта</label>
+                <label class="home">Дом</label>
+                <label class="kv">Кв.</label>
+                </div>
+                <div class="stroketwo">
+                <input class="inputthree" type="tel">
+                <input class="inputfour" type="email">
+                <input class="inputfive" type="number">
+                <input class="inputsix" type="number">
+                </div>
+                <label>Тариф</label>
+                <div class="agreement">
+                    <div class="superone">
+                        <input id="agreement-1" type="radio" name="b" value="«Супер»" checked>
+                        <label for="agreement-1">«Супер»</label>
+                    </div>
+                    <div class="megatwo">
+                        <input id="agreement-2" type="radio" name="b" value="«Мега»">
+                        <label for="agreement-2">«Мега»</label>
+                    </div>
+                    <div class="gigathree">
+                        <input id="agreement-3" type="radio" name="b" value="«Гига»">
+                        <label for="agreement-3">«Гига»</label>
+                    </div>
+
+                </div>
+                <div class="div">
+                <p>50 мб/с, от 315 руб/мес.</p>
+                <p>100 мб/с, от 435 руб/мес.</p>
+                <p>200 мб/с, от 650 руб/мес.</p>
+                </div>
+                <div class="data">
+                    <a href="#">Отправить заявку</a>
+                    <input type="checkbox">
+                    <p>Даю своё согласие на обработку<br>
+                        персональных данных компанией ООО «ГТК»</p>
+                </div>
+            </form>
+        </div>
+        <div class="la">
+            <button><img src="assets/images/icons-1.png" alt=""></button>
+            <div class="imageone">
+                <h2>500 рублей на счёт<br>
+                    каждому абоненту</h2>
+                <p>Получите на свой счёт<br>
+                    500 бонусных рублей,<br>
+                    просто подключив друзей</p>
+                <button><img src="assets/images/icons.png" alt="Стрелка">Условия акции</button>
+            </div>
+                <div class="imagetwo">
+                    <h2>Два месяца<br>
+                        бесплатного Интернета</h2>
+                    <p>Выбирайте ГТК и получайте<br>
+                        подарок - 2 месяца<br>
+                        бесплатного интернета</p>
+                    <button><img src="assets/images/icons.png" alt="Стрелка">Условия акции</button>
+                    <p>Абонент любой компании-провайдера, и желающий поменять<br>
+                        своего провайдера на компанию ГТК, получает в подарок 2<br>
+                        месяца бесплатного Интернета на скорости 100 мбит/сек.</p>
+                    <p>Просто подайте заявку любым удобным для Вас способом и не<br>
+                        забудьте отдать нашему сотруднику при подключении<br>
+                        оригинал или копию документа, удостоверяющего, что ранее<br>
+                        Вы пользовались другим провайдером.</p>
+                </div>
+                <div class="imagethree">
+                    <h2>Пять месяцев интернета<br>
+                        на скорости 100 мбит/сек</h2>
+                    <p>Подключайтесь к ГТК<br>
+                    и работайте быстрее<br>
+                    со скоростью 100 мбит/сек.<br>
+                    в течение 5 месяцев</p>
+                    <button><img src="assets/images/icons.png" alt="Стрелка">Условия акции</button>
+                </div>
+            <div class="imagefour">
+                <h2>ТВ-сервис<br>
+                    «СмотрЁшка»</h2>
+                <p>Телевидение для каждого<br>
+                    члена Вашей семьи</p>
+                <a href="#">Подробнее</a>
+            </div>
+        </div>
+        <footer class="foo">
+            <div class="footer container">
+                <div class="img">
+                    <img src="assets/images/logo-1.png" alt="Логотип">
+                    <p>&copy; ООО "ГТК", 2013</p>
+                </div>
+                <div class="gtk">
+                    <p>Служба технической поддержки ГТК<br>
+                        работает <b>с 10:00 до 22:00 без выходных</b></p>
+                    <p>Контакты</p>
+                    <div class="support">
+                    <p>[812] 332-34-33</p>
+                    <p>support@gtk.su</p>
+                    </div>
+                    <p>[812] 33-234-33</p>
+                    <a href="#"><p>Лицензии и сертификаты</p></a>
+                </div>
+                <div class="nav">
                     <ul>
                         <li><a href="#">Тарифы</a></li>
                         <li><a href="#">О компании</a></li>
@@ -20,277 +295,8 @@
                         <li><a href="#">Оставить заявку</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
-                    <ul>
-                        <li><a href="#">(812) 332-34-33</a></li>
-                        <li><a href="#">support@gtk.su</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <div class="container podcontainer">
-            <div class="container connect">
-                <h1>Пять месяцев интернета<br>на скорости 100 мбит/сек</h1>
-                <p>Подключитесь к ГТК и работайте<br>быстрее со скоростью 100 мбит/сек.<br>в течение 5 месяцев</p>
-                <button><a href="#">Подробнее</a></button>
-            </div>
-            <div class="con">
-                <div class="radiobtn">
-                    <input type="radio" name="a" value="1">
-                    <input type="radio" name="a" value="2" checked>
-                    <input type="radio" name="a" value="3">
-                    <input type="radio" name="a" value="4">
-                </div>
-                <button><a href="#">Все акции</a></button>
-            </div>
-        </div>
-        <div class="container">
-            <div class="city">
-                <button type="button">Санкт-Петербург</button>
-                <button type="button">Ленинградская область</button>
-                <button type="button">Тарифы СмотрЁшка</button>
-            </div>
-            <div class="rate">
-                <div class="super">
-                    <h2>Тариф<br>«Супер»</h2>
-                    <p class="pa">Вы можете бесперебойно решать<br>повседневные задачи в сети:<br>досуг, учёба или работа</p>
-                    <div class="one">
-                    <p class="po">Подключение</p>
-                    <p>Бесплатно</p>
-                    </div>
-                    <div class="two">
-                    <p class="sk">Скорость</p>
-                    <p>50 мб/с</p>
-                    </div>
-                    <div class="border">
-                        <div class="price">
-                            <p class="price">от 315</p>
-                        </div>
-                        <div class="month">
-                            <p class="po">руб/мес.</p>
-                            <p class="po size">[450 руб за 1 мес.]</p>
-                        </div>
-                        <button class="request"><a href="#">Оставить заявку</a></button>
-                    </div>
-                </div>
-                <div class="mega">
-                    <h2>Тариф<br>«Мега»</h2>
-                    <p class="pa">Для уверенных пользователей<br>интернета: стриминговые сервисы,<br>кино в HD-качестве, загрузка<br>объёмных файлов</p>
-                    <div class="three">
-                        <p class="po">Подключение</p>
-                        <p>Бесплатно</p>
-                    </div>
-                    <div class="four">
-                        <p class="sk">Скорость</p>
-                        <p>100 мб/с</p>
-                    </div>
-                    <div class="border">
-                    <div class="price">
-                        <p class="price">от 430</p>
-                    </div>
-                    <div class="month">
-                        <p class="po">руб/мес.</p>
-                        <p class="po size">[600 руб за 1 мес.]</p>
-                    </div>
-                    <button class="request"><a href="#">Оставить заявку</a></button>
-                    </div>
-                </div>
-                <div class="giga">
-                    <h2>Тариф<br>«Гига»</h2>
-                    <p class="pa">Для одновременной работы,<br>более четырёх устройств.<br>Тариф для рабочих задач<br>и онлайн-игр</p>
-                    <div class="five">
-                        <p class="po">Подключение</p>
-                        <p>1000 руб.</p>
-                    </div>
-                    <div class="six">
-                        <p class="sk">Скорость</p>
-                        <p>200 мб/с</p>
-                    </div>
-                    <div class="border">
-                    <div class="price">
-                        <p class="price">от 650</p>
-                    </div>
-                    <div class="month">
-                        <p class="po">руб/мес.</p>
-                        <p class="po size">[800 руб за 1 мес.]</p>
-                    </div>
-                    <button class="request"><a href="#">Оставить заявку</a></button>
-                    </div>
                 </div>
             </div>
-        </div>
-    <div class="desc container">
-        <div class="blue"></div>
-        <div class="red">
-            <p class="company">ГТК – компания-провайдер с многолетним опытом,<br>
-                действующая в интересах каждого клиента.<br>
-                Мы профессионально и оперативно решаем<br>
-                любую задачу наших пользователей.
-            </p>
-        </div>
-        <p>Когда вы становитесь нашим клиентом, вы гарантированно<br>
-            можете рассчитывать на качественную и профессиональную<br>
-            адресную поддержку в решении любого возникшего<br>
-            технического вопроса, ведь ГТК с 2003 года находит<br>
-            индивидуальный подход к каждому новому абоненту
-        </p>
-        <div class="yellow"></div>
-    </div>
-    <div class="container view">
-        <h2 class="service">ТВ-сервис<br>
-            «СмотрЁшка»</h2>
-        <p>Вы найдёте на «СмотрЁшке» качественный<br>
-            контент на любой вкус и с любого устройства</p>
-        <button><a href="#">Подробнее</a></button>
-    </div>
-    <div class="container stock">
-    <div class="orange">
-        <h2>500 рублей на счёт<br>
-            каждому абоненту</h2>
-        <p>Хотите подарок? Легко!<br>
-            Вы рекомендуете нас Вашим друзьям<br>
-            и знакомым - мы пополняем Ваш счёт<br>
-            в ГТК на 500 рублей!
-        </p>
-        <div class="more">
-            <button class="btn"><a href="#">Подробнее</a></button>
-        </div>
-    </div>
-    <div class="green">
-        <h2>Два месяца<br>
-            бесплатного<br>
-            Интернета</h2>
-        <p>Вас больше не устраивают условия<br>
-            вашего интернет-провайдера?<br>
-            Станьте клиентом ГТК и получите<br>
-            бесплатное использование интернета<br>
-            на протяжении 2 месяцев
-        </p>
-        <div class="moretwo">
-            <button class="btn"><a href="#">Подробнее</a></button>
-        </div>
-    </div>
-    </div>
-    <div class="form container">
-        <h2>Станьте абонентом ГТК прямо сейчас!</h2>
-        <form>
-            <div class="name">
-            <label class="family">Имя и Фамилия</label>
-            <label class="street">Улица</label>
-            </div>
-            <div class="stroke">
-            <input class="inputone" type="text">
-            <input class="inputtwo" type="text">
-            </div>
-            <div class="tel">
-            <label class="num">Номер телефона</label>
-            <label class="email">Эл.почта</label>
-            <label class="home">Дом</label>
-            <label class="kv">Кв.</label>
-            </div>
-            <div class="stroketwo">
-            <input class="inputthree" type="tel">
-            <input class="inputfour" type="email">
-            <input class="inputfive" type="number">
-            <input class="inputsix" type="number">
-            </div>
-            <label>Тариф</label>
-            <div class="agreement">
-                <div class="superone">
-                    <input id="agreement-1" type="radio" name="b" value="«Супер»" checked>
-                    <label for="agreement-1">«Супер»</label>
-                </div>
-                <div class="megatwo">
-                    <input id="agreement-2" type="radio" name="b" value="«Мега»">
-                    <label for="agreement-2">«Мега»</label>
-                </div>
-                <div class="gigathree">
-                    <input id="agreement-3" type="radio" name="b" value="«Гига»">
-                    <label for="agreement-3">«Гига»</label>
-                </div>
-
-            </div>
-            <div class="div">
-            <p>50 мб/с, от 315 руб/мес.</p>
-            <p>100 мб/с, от 435 руб/мес.</p>
-            <p>200 мб/с, от 650 руб/мес.</p>
-            </div>
-            <div class="data">
-                <button><a href="#">Отправить заявку</a></button>
-                <input type="checkbox">
-                <p>Даю своё согласие на обработку<br>
-                    персональных данных компанией ООО «ГТК»</p>
-            </div>
-        </form>
-    </div>
-    <div class="la">
-        <button><img src="assets/images/icons-1.png"></button>
-        <div class="imageone">
-            <h2>500 рублей на счёт<br>
-                каждому абоненту</h2>
-            <p>Получите на свой счёт<br>
-                500 бонусных рублей,<br>
-                просто подключив друзей</p>
-            <button><img src="assets/images/icons.png" alt="Стрелка"> Условия акции</button>
-        </div>
-            <div class="imagetwo">
-                <h2>Два месяца<br>
-                    бесплатного Интернета</h2>
-                <p>Выбирайте ГТК и получайте<br>
-                    подарок - 2 месяца<br>
-                    бесплатного интернета</p>
-                <button><img src="assets/images/icons.png" alt="Стрелка">Условия акции</button>
-                <p>Абонент любой компании-провайдера, и желающий поменять<br>
-                    своего провайдера на компанию ГТК, получает в подарок 2<br>
-                    месяца бесплатного Интернета на скорости 100 мбит/сек.</p>
-                <p>Просто подайте заявку любым удобным для Вас способом и не<br>
-                    забудьте отдать нашему сотруднику при подключении<br>
-                    оригинал или копию документа, удостоверяющего, что ранее<br>
-                    Вы пользовались другим провайдером.</p>
-            </div>
-            <div class="imagethree">
-                <h2>Пять месяцев интернета<br>
-                    на скорости 100 мбит/сек</h2>
-                <p>Подключайтесь к ГТК<br>
-                и работайте быстрее<br>
-                со скоростью 100 мбит/сек.<br>
-                в течение 5 месяцев</p>
-                <button><img src="assets/images/icons.png" alt="Стрелка">Условия акции</button>
-            </div>
-        <div class="imagefour">
-            <h2>ТВ-сервис<br>
-                «СмотрЁшка»</h2>
-            <p>Телевидение для каждого<br>
-                члена Вашей семьи</p>
-            <button>Подробнее</button>
-        </div>
-    </div>
-    <footer class="foo">
-        <div class="footer container">
-            <div class="img">
-                <img src="assets/images/logo-1.png" alt="Логотип">
-                <p>&copy; ООО "ГТК", 2013</p>
-            </div>
-            <div class="gtk">
-                <p>Служба технической поддержки ГТК<br>
-                    работает <b>с 10:00 до 22:00 без выходных</b></p>
-                <p>Контакты</p>
-                <div class="support">
-                <p>[812] 332-34-33</p>
-                <p>support@gtk.su</p>
-                </div>
-                <p>[812] 33-234-33</p>
-                <a href="#"><p>Лицензии и сертификаты</p></a>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li><a href="#">Тарифы</a></li>
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Акции</a></li>
-                    <li><a href="#">Оставить заявку</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    </body>
-</html>
+        </footer>
+        </body>
+    </html>
